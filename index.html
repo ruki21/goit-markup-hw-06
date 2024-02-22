@@ -377,24 +377,28 @@
                                 </svg>
                             </a>
                         </li>
+                    </ul>
                 </li>
                 <div class="subscribe-container">
                     <p class="subscribe-text">Subscribe</p>
-                    <form class="subscribe-form" action="">
+                    <form class="subscribe-form" action="#">
                         <label class="subscribe-label">
                             <input type="text" placeholder="E-mail">
                         </label>
 
                         <button type="submit">Subscribe
-                            <svg class="footer-subscribe-icon" width="24" height="24">
+                            <svg width="24" height="24">
                                 <use href="./images/svg/icons.svg#send"></use>
                             </svg>
                         </button>
 
                     </form>
+
                 </div>
+            </ul>
+
         </div>
-        </ul>
+
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
@@ -409,7 +413,7 @@
 
                 <label class="user-contact-field">
                     <span class="user-contact-label">Name</span>
-                    <input type="text" name="full_name" placeholder="full_name">
+                    <input type="text" name="full_name" placeholder="">
                     <svg class="modal-icon-field" width="10" height="8">
                         <use href="./images/svg/icons.svg#person"></use>
                     </svg>
@@ -436,14 +440,28 @@
                     <textarea name="comment" rows="5"></textarea>
                 </label>
 
-                <label class="user-contact-checkbox user-contact-field">
-                    <input type="checkbox" name="agree">
+                <!-- <label class="user-contact-checkbox user-contact-field">
+                    <input type="checkbox" id="agree" name="agree">
                     <svg class="modal-icon-check">
                         <use href="./images/svg/icons.svg#checkmark"></use>
                     </svg>
                     I accept the terms and conditions of the
                     <a class="modal-link-text">Privacy Policy</a>
+                </label> -->
+                <label class="form-group-agree">
+                    <input type="checkbox" name="agree" id="agree" />
+                    <label for="agree">
+                        <svg width="22" heigh="22">
+                            <use href="./images/svg/icons.svg#checkmark"></use>
+                        </svg>
+                        I accept the terms and conditions of the <a href="#">Privacy Policy</a>
+                    </label>
+
+
+
+
                 </label>
+
 
                 <button class="modal-submit" type="submit">Send</button>
 

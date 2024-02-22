@@ -828,6 +828,85 @@ main {
     gap: 8px;
 }
 
+
+.subscribe-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.subscribe-container {
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    color: var(--white);
+}
+
+.subscribe-container {
+    color: var(--iris);
+}
+
+.subscribe-container {
+    color: var(--cloud);
+    letter-spacing: 0.32px;
+    line-height: 24px;
+}
+
+.subscribe-container {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    color: var(--white);
+}
+
+.subscribe-form {
+    display: flex;
+    gap: 16px;
+}
+
+.subscribe-form input {
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid var(--white);
+    padding: 8px 16px;
+    color: var(--white);
+    background: transparent;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    transition: all var(--transition-duration) var(--animation-timing-function);
+}
+
+.subscribe-form ::placeholder {
+    color: var(--white);
+    font-size: 12px;
+    letter-spacing: 0.48px;
+}
+
+.subscribe-form button {
+    height: 40px;
+    border-radius: 4px;
+    padding: 8px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    background: var(--iris);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    transition: all var(--transition-duration) var(--animation-timing-function);
+}
+
+.subscribe-form button:hover {
+    background: var(--ocean);
+
+}
+
+.subscribe-form button svg {
+    fill: var(--white);
+    margin-left: 8px;
+}
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -1012,7 +1091,68 @@ label.user-contact-checkbox input {
     height: 150px;
 }
 
+/* .user-contact-checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+} */
+.form-group-agree {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+
+}
+
+.form-group-agree label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: var(--lightslate);
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+}
+
+.form-group-agree input {
+    display: none;
+}
+
+.form-group-agree label svg {
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--navybluemodal);
+    border-radius: 2px;
+    padding: 1px;
+    fill: none;
+    transition: fill var(--transition-duration) var(--animation-timing-function);
+}
+
+.form-group-agree input[type="checkbox"]:checked+label svg {
+    fill: var(--white);
+    background-color: var(--iris);
+}
+
+.form-group-agree label {
+
+    cursor: pointer;
+}
+
+.form-group-agree label a {
+    text-decoration: underline;
+    color: var(--iris);
+    transition: color var(--transition-duration) var(--animation-timing-function);
+}
+
+.form-group-agree label a:hover {
+    color: var(--ocean);
+}
+
 .modal-submit {
+
     align-items: flex-start;
     width: 200px;
     height: 50px;
@@ -1041,7 +1181,7 @@ label.user-contact-checkbox input {
     transform: translateY(-50%);
 }
 
-.modal-icon-check {
+/* .modal-icon-check {
 
     width: 16px;
     height: 15px;
@@ -1054,4 +1194,4 @@ label.user-contact-checkbox input {
 
 
 
-}
+} */
